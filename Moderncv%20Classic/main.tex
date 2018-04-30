@@ -12,7 +12,7 @@
 \moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
 % character encoding
 \usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
@@ -36,6 +36,10 @@
 \begin{document}
 \makecvtitle{}
 
+	\section{Education}
+	\cventry{2016 -- Today}{42}{}{Paris}{}{Tuition-free school with a great emphasis on teamwork and peer learning.}  % arguments 3 to 6 can be left empty
+	\cventry{2016}{Baccalauréat STI2D}{}{}{}{High Honours.\newline{}}
+
 	\section{Projects}
 	\subsection{42 cursus projects}
 	\cventry{}{Corewar}{including an SDL visualizer}{}{}{A virtual arena where programs written in assembly fight each other.\newline{}}
@@ -46,15 +50,11 @@
 	\cventry{2014}{Created an high school programming club}{}{}{}{}
 	\cventry{2013}{Developed a snake in C with SDL}{}{}{}{(First programming experience)\newline{}}
 
-	\section{Education}
-	\cventry{2016 -- Today}{42}{}{Paris}{}{Tuition-free school with a great emphasis on teamwork and peer learning.}  % arguments 3 to 6 can be left empty
-	\cventry{2016}{Baccalauréat STI2D}{}{}{}{High Honours.\newline{}}
-
 	\section{Technical skills}
-	\cvitem{}{C, SDL, Vim, Git, Shell\newline{}}
+	\cvitem{}{Proficient: C, SDL, Vim, Git, Shell}
+	\cvitem{}{Eager to learn: C++, Rust, Python, Lua\newline{}}
 
 	\section{Interests}
 	\cvitem{}{Game Design theory, Japanese culture, Music, Travel}
-	\cvitem{}{Eager to learn: C++, Rust, Python, Lua}
 
 \end{document}
