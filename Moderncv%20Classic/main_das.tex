@@ -1,0 +1,68 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+\usepackage{expl3}
+\expandafter\def\csname ver@l3regex.sty\endcsname{}
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{fontawesome5}
+
+% personal data
+\name{Youva}{GAUDÉ}
+\title{Développeur, alternance (2 ans)}% optional, remove / comment the line if not wanted
+\address{}{Paris, France}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+33~6~73~26~58~73}               % optional, remove / comment the line if not wanted
+\email{contact@youva.fr}                               % optional, remove / comment the line if not wanted
+\homepage{youva.fr}                         % optional, remove / comment the line if not wanted
+\extrainfo{\faGithub\href{https://github.com/Eviber}{github.com/eviber}}                 % optional, remove / comment the line if not wanted
+%\photo[59pt][0.4pt]{datface}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+\begin{document}
+\makecvtitle{}
+
+	\section{Expérience professionelle}
+	\cventry{2019 -- 2020}{INRAE}{Stage}{Développeur}{}{(Institut National de Recherche pour l'Agriculture, l'alimentation et l'Environnement)\newline{}JS, expertise technique, rework d'une app de PHP en serverless avec Electron.}  % arguments 3 to 6 can be left empty
+
+	\section{Formation}
+	\cventry{Actuellement}{42}{}{Paris}{}{Une école privilégiant le travail en équipe et le partage de connaissances entre pairs.}  % arguments 3 to 6 can be left empty
+	\cventry{2023}{Ferrous Systems}{Embedded Rust Training}{}{}{Formation au Rust embarqué.}
+	\cventry{2016}{Baccalauréat STI2D}{Système d'Information et Numérique}{}{}{Mention Bien.}
+
+	\section{Projets réalisés}
+	\cventry{}{\href{https://www.youva.fr/}{Projets Personnels}}{}{}{}{Principalement des game jams, pour la plupart faites en Lua avec Love2D, \href{https://www.youva.fr/}{cf. portfolio}.}
+	\cventry{}{\href{https://www.codingame.com/profile/45f5045e42eebb2aae627a4a1116aaff3752051}{Codingame}}{}{}{}{Je suis actuellement dans le top 0.2\% des utilisateurs de la plateforme.}
+	\subsection{Projets du cursus de 42}
+	\cventry{}{\href{https://github.com/Ragarnoy/Taskmaster}{Taskmaster}}{}{Rust}{}{Un dæmon qui gère des processus via une state machine, similaire à Supervisor.}
+	\cventry{}{\href{https://github.com/Eviber/corewar}{Corewar}}{}{C}{SDL}{Un émulateur de CPU simple où combattent des programmes écrits en assembleurs.}
+	% \cventry{}{\href{https://github.com/Eviber/minirogue_mines}{Minirogue}}{game jam}{}{}{Un clone de Rogue en Python fait en moins de 7 heures avec un étudiant de MINES ParisTech.}
+	\cventry{}{\href{https://github.com/Eviber/lem-in}{Lem-in}}{}{C}{SDL}{Une implémentation de la théorie des graphes/pathfinding portant sur l'optimisation \newline{} du déplacement d'unités d'un point à un autre.}
+	% \cventry{}{\href{https://github.com/Eviber/push_swap}{Push-swap}}{dont un visualiseur en SDL}{}{}{Une implémentation d'algorithmes de tri avec des opérations restrictives sur deux piles.}
+
+	\section{Compétences techniques}
+	\cvitem{}{\textbf{Bonne maîtrise: }Rust, C, SDL2, Vim, Lua, Git, JS}
+	\cvitem{}{\textbf{En cours d'apprentissage: }C++, Python}
+
+	\section{Centres d'intérêt}
+	\cvitem{}{Travail créatif, Culture japonaise, Programmation, Sciences, Linguistique}
+	\cvitem{}{Game Design, Voyage (Australie, Europe, île de la Réunion)}
+
+\end{document}
